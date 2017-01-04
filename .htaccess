@@ -1,0 +1,9 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    RewriteRule ^$   http://172.31.144.48/~groupe12_2016/marathon2016/public   [L]
+    RewriteRule (.*) http://172.31.144.48/~groupe12_2016/marathon2016/public/$1 [L]
+
+</IfModule>
